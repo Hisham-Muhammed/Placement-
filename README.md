@@ -1,27 +1,48 @@
-Accreditation
+<div align="center">
+​<!-- Header Banner / Logo -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=220&section=header&text=V05%20-%20Employer%20%26%20Placement%20Drive&fontSize=38&animation=fadeIn&fontColor=ffffff" width="100%" alt="Header Banner"/>
 ​<p align="center">
-A production-ready management platform built to model reusable company master profiles, schedule campus placement drives without data redundancy, and generate automated audit reports.
+<b>A Next-Gen Institutional Placement & Employer Management Ecosystem</b>
 </p>
-​Key Features • ER Architecture • Tech Stack • Quick Start • Acceptance Test
+​<!-- Badges -->
+<p align="center">
+<a href="https://github.com/Hisham-Muhammed"><img src="https://img.shields.io/github/stars/Hisham-Muhammed/V05-Placement-Registry?style=for-the-badge&color=7c3aed&logo=github" alt="Stars"></a>
+<a href="https://github.com/Hisham-Muhammed"><img src="https://img.shields.io/github/forks/Hisham-Muhammed/V05-Placement-Registry?style=for-the-badge&color=2563eb&logo=github" alt="Forks"></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-emerald.svg?style=for-the-badge" alt="License"></a>
+<a href="https://github.com/Hisham-Muhammed"><img src="https://img.shields.io/badge/Accreditation-NAAC%20%2F%20NBA-f59e0b?style=for-the-badge&logo=shield" alt="Accreditation"></a>
+</p>
+​<p align="center">
+<a href="#-quick-deploy">⚡ Quick Deploy</a> •
+<a href="#-features">✨ Features</a> •
+<a href="#-er-architecture">📐 Architecture</a> •
+<a href="#-installation">🚀 Setup</a> •
+<a href="#-developers">👨‍💻 Developers</a>
+</p>
 ​</div>
 ​📌 Business & Accreditation Requirement
-​Educational institutions are required by accreditation bodies (NAAC / NBA) to maintain comprehensive records of employer recruitment visits and student placement drives.
-​🔴 The Challenge
-​Traditional placement management systems re-enter company details (location, industry, contact info) for every new drive. This causes:
-​Data Duplication: The same employer exists under multiple variations across academic years.
-​Inaccurate Audit Reports: Calculating "Repeat Recruiters" or "Industry-wise Participation" becomes error-prone.
-​🟢 The Solution (Module V05 Architecture)
-​This module decouples Company Master Profiles from time-bound Placement Drives:
-​Company Master: Reusable master record capturing generic corporate entity details.
-​Placement Drive: Transactional record linking back to the Master Company via Foreign Key (company_id).
-​✨ Key Features
-​🏢 Company Master Registry: Centralized directory with industry classifications and locations.
-​📅 Placement Drive Scheduler: Link drives to Academic Years with custom CGPA criteria and real-time status updates (Scheduled, In-Progress, Completed, Cancelled).
-​🔁 Repeat Recruiter Engine: Automatically tracks and reports companies visiting campus across multiple academic years.
-​📊 Dynamic Analytical Dashboards:
-​Drives conducted by Academic Year
-​Industry-wise recruiter breakdown
-​Repeat recruiter frequency reports
-​🔍 Real-Time Filtering: Instant parametric search by industry, academic year, and drive status.
+​Institutions must document visiting recruiters and placement drives while avoiding data duplication across multiple academic years.
+​🛑 The Problem
+​Traditional systems duplicate company records every time a drive is created. This corrupts audit reports, distorts repeat recruiter metrics, and fails NAAC / NBA criteria.
+​🚀 The Solution
+​This platform implements a Reusable Master Entity Architecture. Company records are stored once and referenced by multiple placement drives using Foreign Keys (company_id).
+​⚡ Quick Deploy
+​Deploy or test the project instantly with a single click:
+​<p align="center">
+<a href="https://replit.com">
+<img src="https://img.shields.io/badge/Run%20on-Replit-ff4154?style=for-the-badge&logo=replit&logoColor=white" alt="Run on Replit"/>
+</a>
+  
+<a href="https://heroku.com">
+<img src="https://img.shields.io/badge/Deploy%20to-Heroku-7952b3?style=for-the-badge&logo=heroku&logoColor=white" alt="Deploy to Heroku"/>
+</a>
+  
+<a href="https://vercel.com">
+<img src="https://img.shields.io/badge/Deploy%20to-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Deploy to Vercel"/>
+</a>
+</p>
+​✨ Features
+​🏢 Company Master Registry: Centralized catalog storing company metadata, location, and sector.
+​📅 Placement Drive Scheduling: Connect drives to Academic Years with custom eligibility criteria and dynamic statuses (Scheduled, In-Progress, Completed, Cancelled).
+​🔁 Repeat Recruiter Analytics: Automated engine tracking companies visiting campus across multiple years.
+​📊 Real-time Dashboards: Visual charts for industry breakdown and yearly drive distribution.
 ​📐 ER Architecture & Schema Design
-​ER Diagram (Mermaid)
